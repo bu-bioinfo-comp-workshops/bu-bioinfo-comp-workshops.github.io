@@ -1,6 +1,8 @@
 title: Computational Ancient DNA Workshop
 markdown: kramdown
-remote_theme: jekyll-theme-slate
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme
 exclude:
   - requirements.txt
   - PROGRESS_NOTES.md
