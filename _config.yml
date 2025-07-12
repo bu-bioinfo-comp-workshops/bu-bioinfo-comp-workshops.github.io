@@ -1,6 +1,6 @@
 title: Computational Ancient DNA Workshop
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-cayman
 exclude:
   - requirements.txt
   - PROGRESS_NOTES.md
