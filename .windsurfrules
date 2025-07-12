@@ -39,11 +39,12 @@ You are primarily responsible for creating the workshop materials in the followi
 
 The `workshop_N_instructions.md` file should contain the following sections:
 
-- Introduction
-- Problem Statement
-- Technical Skills Introduced
-- Workshop Structure
-- Sample Initial Prompt
+- Introduction: a short description of the workshop
+- Problem Statement: a clear biological/bioinformatics challenge with specific output goal
+- Technical Skills Introduced: a list of the technical skills that students will learn in the workshop
+- Workshop Structure: a description of the workshop structure, including the high level sequence of tasks that students will need to perform to complete the workshop
+- Sample Initial Prompt: a prompt that the students can use to get started with the workshop
+- Deliverables: a detailed description of the specific artifacts (e.g. files, plots, etc) that the students will create in the workshop
 
 
 The `workshop_N_introduction_slides.md` file should contain the introduction slides for the workshop. This is an overview of the workshop and should be engaging and easy to follow. This should include the problem statement, the conceptual background, an overview of the workshop tasks, and example prompts that might be used to get started.
