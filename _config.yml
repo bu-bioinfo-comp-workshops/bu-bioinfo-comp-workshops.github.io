@@ -1,0 +1,9 @@
+title: Computational Ancient DNA Workshop
+markdown: kramdown
+theme: minima
+exclude:
+  - requirements.txt
+  - PROGRESS_NOTES.md
+  - external_materials/
+  - lectures/
+  - .windsurfrules
