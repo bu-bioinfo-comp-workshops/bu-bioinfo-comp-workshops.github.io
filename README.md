@@ -1,9 +1,8 @@
----
-title: README
-layout: default
----
-
 # Computational Workshop Generator
+
+## Site
+
+[Computational Workshops](https://bu-bioinfo-ms.github.io/computational_workshops)
 
 ## Purpose
 
