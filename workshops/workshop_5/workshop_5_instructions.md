@@ -1,7 +1,16 @@
+---
+title: Workshop 5 Instructions
+layout: default
+---
+
 # Workshop 5: Authenticating Ancient DNA and Quality Control
 
 ## Introduction
 In this workshop, you will learn how to authenticate ancient DNA data and perform essential quality control (QC) checks. Ancient DNA is often degraded and contaminated, so verifying its authenticity and quality is a crucial step in any analysis. You will use LLMs to help generate and debug QC code, interpret outputs, and iterate on your workflow. This workshop is designed for students with little prior experience in QC or ancient DNA authentication.
+
+## Supporting Materials
+- [Workshop 5: Intro Slides](workshop_5_introduction_slides.html)
+- [Workshop 5: Background Slides](workshop_5_background_slides.html)
 
 ## Problem Statement
 Your PI wants to ensure that the ancient DNA data you are analyzing is authentic and of sufficient quality for downstream analysis. Your job is to:

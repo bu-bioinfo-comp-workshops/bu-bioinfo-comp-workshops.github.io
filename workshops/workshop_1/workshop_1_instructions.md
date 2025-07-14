@@ -1,3 +1,8 @@
+---
+layout: default
+title: Workshop 1 - Download and Explore Ancient DNA Data
+---
+
 # Workshop 1: Download and Explore Ancient DNA Data
 
 ## Introduction
@@ -32,10 +37,10 @@ You have received raw sequencing data from the field team. Your PI wants to know
    - Run your code, use LLMs to help debug errors, and refine your prompts and scripts until you get correct results.
 5. **Reporting:**
    - Summarize your findings in a short markdown report. All files should be tracked in git and pushed to GitHub.
+
 ## Sample Initial Prompt
-```
-I need to download a small ancient mitochondrial genome FASTA file from a public database (such as the Allen Ancient DNA Resource or NCBI). Please generate Python code to download the file, read the sequence, and calculate its length and GC content.
-```
+
+> I need to download a small ancient mitochondrial genome FASTA file from a public database (such as the Allen Ancient DNA Resource or NCBI). Please help me brainstorm ways I can accomplish this.
 
 ## Deliverables
 By the end of this workshop, you will have created the following artifacts:

@@ -1,3 +1,8 @@
+---
+title: Workshop 2 Background Slides
+layout: default
+---
+
 # Workshop 2 Background Slides
 
 ---

@@ -1,3 +1,8 @@
+---
+title: Ancient DNA Analysis Workshop Narrative
+layout: default
+---
+
 # Ancient DNA Analysis Team: Narrative and Workshop Sequence
 
 ## Narrative Overview

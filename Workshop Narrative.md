@@ -1,3 +1,8 @@
+---
+title: Workshop Narrative
+layout: default
+---
+
 I'm working on a series of computational workshops for bioinformatics PhD students. The workshops need to introduce key technical skills to the students if they don't have them already. Key skills are basic proficiency in: linux CLI, VS code,compute cluster usage, git and github, python, R, bash, and workflow management software (snakemake). We have a shared compute cluster (SCC) that we use for these workshops, and the materials are hosted on github and distributed to students using github classroom. VS code will be used as the development environment for all workshops.
 
 I want to scaffold the workshops using a fictitious but realistic story about a genomics lab. The participant plays the role of a graduate student working in the lab, and is given a series of computational tasks to complete related to a project in the lab. The first tasks should be simple and only use a small subset of skills. Each subsequent task should build upon the previous one that is realistic to the overall narrative of the story. The story should be engaging and interesting to the students, and should provide a realistic context for the skills being taught.

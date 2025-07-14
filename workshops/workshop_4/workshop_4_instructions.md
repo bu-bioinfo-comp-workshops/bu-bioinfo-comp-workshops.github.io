@@ -1,7 +1,16 @@
+---
+title: Workshop 4 Instructions
+layout: default
+---
+
 # Workshop 4: Comparative Analysis of Multiple Ancient Samples
 
 ## Introduction
 In this workshop, you will extend your workflow to handle and compare multiple ancient mitochondrial genome samples. You will use Snakemake and LLMs to automate batch downloads, run analyses on many samples, and generate comparative plots. This workshop is designed for students with little prior experience handling multiple datasets or comparative genomics.
+
+## Supporting Materials
+- [Workshop 4: Intro Slides](workshop_4_introduction_slides.html)
+- [Workshop 4: Background Slides](workshop_4_background_slides.html)
 
 ## Problem Statement
 The excavation has yielded several bone samples from different individuals. Your PI wants to know how these ancient mitochondrial genomes compare to each other and to modern samples. Your job is to:

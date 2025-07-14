@@ -1,11 +1,17 @@
+---
+layout: default
+title: Computational Ancient DNA Workshop Series
+---
+
 # Computational Ancient DNA Workshop Series
+
+![Workshop Banner](assets/images/workshop_flow.excalidraw.svg)
 
 Welcome to the workshop series! Explore the materials below:
 
 ## Narrative & Overview
 - [Ancient DNA Narrative](Ancient%20DNA%20Narrative.html)
 - [Workshop Overview](Workshop%20Overview.html)
-- [Workshop Narrative](Workshop%20Narrative.html)
 
 ## Workshops
 - [Workshop 1: Download and Explore Ancient DNA Data](workshops/workshop_1/workshop_1_instructions.html)

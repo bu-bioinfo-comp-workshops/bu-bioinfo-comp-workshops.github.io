@@ -1,3 +1,8 @@
+---
+title: README
+layout: default
+---
+
 # Computational Workshop Generator
 
 ## Purpose

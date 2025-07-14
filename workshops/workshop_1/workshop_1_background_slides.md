@@ -1,3 +1,8 @@
+---
+layout: slides
+title: Workshop 1 - Background Slides
+---
+
 # Workshop 1 Background Slides
 
 ---

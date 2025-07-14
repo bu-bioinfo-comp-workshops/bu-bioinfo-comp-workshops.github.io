@@ -1,7 +1,16 @@
+---
+title: Workshop 6 Instructions
+layout: default
+---
+
 # Workshop 6: Reproducibility and Collaboration
 
 ## Introduction
 In this final workshop, you will focus on making your ancient DNA analysis fully reproducible and ready for collaboration and publication. You will use GitHub, markdown documentation, and workflow best practices to prepare your work for sharing with others. LLMs will assist you in writing clear documentation, collaborative instructions, and reflecting on your computational process. This workshop is designed for students with little prior experience in scientific communication or collaborative coding.
+
+## Supporting Materials
+- [Workshop 6: Intro Slides](workshop_6_introduction_slides.html)
+- [Workshop 6: Background Slides](workshop_6_background_slides.html)
 
 ## Problem Statement
 Your PI wants your workflow, results, and documentation to be ready for publication and sharing with collaborators. Your job is to:

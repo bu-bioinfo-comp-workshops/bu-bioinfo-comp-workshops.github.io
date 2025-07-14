@@ -1,3 +1,8 @@
+---
+title: Workshop 4 Introduction Slides
+layout: default
+---
+
 # Workshop 4 Introduction Slides
 
 ---

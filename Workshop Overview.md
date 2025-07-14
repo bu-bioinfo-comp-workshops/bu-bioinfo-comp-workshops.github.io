@@ -1,3 +1,8 @@
+---
+title: Workshop Overview
+layout: default
+---
+
 # Workshop Overview
 
 The goal of these workshops is to give participants hands on experience with computational tools and skills required by modern bioinformatics and computational biology research. The workshops are designed to be interactive and engaging, with a focus on practical application of the skills covered.
