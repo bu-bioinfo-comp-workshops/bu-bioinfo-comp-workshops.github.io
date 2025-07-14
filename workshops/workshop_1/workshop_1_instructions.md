@@ -4,8 +4,8 @@
 Welcome to your first hands-on computational workshop as a new graduate student in an ancient genomics lab! This session is designed for students with little prior computational experience. You will use GitHub Classroom to access your workshop repository and learn essential skills by working with real ancient DNA data. Your main goal is to download a small ancient mitochondrial genome dataset from a public database and calculate basic statistics. Throughout, you will use Large Language Models (LLMs) to help translate biological questions into code, debug your scripts, and iterate until you reach a solution. This workshop follows the Problem → Prompt → Code → Debug → Result cycle.
 
 ## Supporting Materials
-- [Workshop 1: Intro Slides](workshops/workshop_1/workshop_1_introduction_slides.html)
-- [Workshop 1: Background Slides](workshops/workshop_1/workshop_1_background_slides.html)
+- [Workshop 1: Intro Slides](workshop_1_introduction_slides.html)
+- [Workshop 1: Background Slides](workshop_1_background_slides.html)
 
 ## Problem Statement
 You have received raw sequencing data from the field team. Your PI wants to know: "What are the basic characteristics of this ancient mitochondrial genome?" Your job is to:
