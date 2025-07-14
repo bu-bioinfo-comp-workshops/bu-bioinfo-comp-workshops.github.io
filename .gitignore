@@ -3,3 +3,4 @@
 external_materials/scc/scraped_pages/*.json
 _site
 .jekyll-cache
+.sass-cache/
