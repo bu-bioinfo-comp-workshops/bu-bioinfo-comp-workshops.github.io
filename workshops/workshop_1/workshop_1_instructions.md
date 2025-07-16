@@ -25,6 +25,10 @@ You have received raw sequencing data from the field team. Your PI wants to know
 - Python scripting for sequence analysis
 - Prompt engineering and iterative debugging with LLMs
 
+## Workshop Workflow
+
+![Workshop Workflow](../assets/images/workshop_workflow.excalidraw.svg)
+
 ## Workshop Structure
 1. **Setup** (with GitHub Classroom):
    - Clone your workshop repository from GitHub Classroom.
