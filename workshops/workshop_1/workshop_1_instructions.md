@@ -38,9 +38,49 @@ You have received raw sequencing data from the field team. Your PI wants to know
 5. **Reporting:**
    - Summarize your findings in a short markdown report. All files should be tracked in git and pushed to GitHub.
 
+At certain points, we will discuss several different ways of accomplishing the stated goals and the situations in when you would choose
+to use a specific approach vs. others. We will ask you to refine your approach using some of the best practices we discuss and introduce
+to you. 
+
+
 ## Sample Initial Prompt
 
 > I need to download a small ancient mitochondrial genome FASTA file from a public database (such as the Allen Ancient DNA Resource or NCBI). Please help me brainstorm ways I can accomplish this.
+
+## Guidelines
+   - Please work entirely on the SCC
+   - Develop your own methods you are comfortable with to accomplish the goals
+
+## Schedule
+
+**1st hour**
+
+Interactive Demo of SCC OnDemand and basic git / github setup (50 minutes)
+- Setup SSH keys (https://www.bu.edu/tech/support/research/system-usage/connect-scc/access-and-security/using-scc-with-github-2fa/#AUTH)
+- Understand VsCode core features and install common plugins
+- Basic SCC Structure (head node, compute nodes, interactive jobs)
+- Home directory and project directory structures
+
+Break (10 minutes)
+
+**2nd hour**
+Objective 1 (20 minutes)
+- Develop a method or series of steps that downloads a single genome and calculates the GC content
+
+Discussion of approach (10 minutes)
+- Demonstration of an approach for accomplishing the stated goals
+- Discussion of the strengths and weaknesses of the approach and possible points of improvement
+
+Modifications to your approach and discussion (30 mins)
+
+**3rd hour**
+
+New modifications to your approach (30 minutes)
+
+Discussion of approach (30 minutes)
+- Demonstration of an approach for accomplishing the stated goals
+- Discussion of the strengths and weaknesses of the approach and possible points of improvement
+
 
 ## Deliverables
 By the end of this workshop, you will have created the following artifacts:
