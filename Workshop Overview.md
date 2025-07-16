@@ -9,6 +9,7 @@ The goal of these workshops is to give participants hands on experience with com
 
 The workshops are organized as a series of realistic use cases that participants will work through in a hands on manner. The workshops are designed to be self contained, with each workshop building on the skills learned in the previous workshop.
 
+
 # Covered Skills
 
 - Large language models
@@ -20,27 +21,31 @@ The workshops are organized as a series of realistic use cases that participants
     - basic navigation and file manipulation
     - basic bash scripting
     - conda 
-- version control
+- Version control
     - git
     - github
-- shared compute cluster (SCC)
+- Shared compute cluster (SCC)
     - SCC ondemand
     - GNU modules usage
     - basic computional resource management (understanding CPU, RAM, GPU)
     - memory resource usage
     - job submission and monitoring
-- computational environments and tools
+- Computational environments and tools
     - VS code
     - GNU modules
     - conda
     - Docker/singularity
     - computational notebooks
-- workflow management software
+- Workflow management software
     - snakemake
-- basic programming
+- Basic programming
     - python
     - R
     - bash
+
+# Workshop Flow
+
+![Workshop Flow](assets/images/workshop_flow.excalidraw.svg)
 
 # Workshop Descriptions
 
