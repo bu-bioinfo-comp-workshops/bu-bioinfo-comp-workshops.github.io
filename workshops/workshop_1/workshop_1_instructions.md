@@ -27,7 +27,7 @@ You have received raw sequencing data from the field team. Your PI wants to know
 
 ## Workshop Workflow
 
-![Workshop Workflow](../assets/images/workshop_workflow.excalidraw.svg)
+![Workshop Workflow](../../assets/images/workshop_workflow.excalidraw.svg)
 
 ## Workshop Structure
 1. **Setup** (with GitHub Classroom):
