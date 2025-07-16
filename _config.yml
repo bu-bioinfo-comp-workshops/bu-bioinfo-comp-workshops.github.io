@@ -6,6 +6,6 @@ plugins:
 exclude:
   - requirements.txt
   - PROGRESS_NOTES.md
+  - README.md
   - external_materials/
-  - lectures/
   - .windsurfrules
