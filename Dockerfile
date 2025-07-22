@@ -5,4 +5,4 @@ COPY Gemfile /srv/jekyll/Gemfile
 
 RUN bundle install
 
-CMD ["jekyll", "serve", "--watch", "--host", "0.0.0.0"]
+CMD ["bundle", "exec", "jekyll", "serve", "--watch", "--host", "0.0.0.0"]
