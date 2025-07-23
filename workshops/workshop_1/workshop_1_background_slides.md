@@ -1,6 +1,7 @@
 ---
 layout: slides
 title: Workshop 1 - Background Slides
+footer: <a href="../workshop_1_instructions/index.html">Back to workshop 1</a>
 ---
 
 # Workshop 1 Background Slides
