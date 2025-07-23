@@ -6,9 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+  <style>
+    .reveal .slide-header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 1000;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+    
+    .reveal .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 1000;
+      font-size: 0.6em;
+      color: #999;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <div class="reveal">
+    <!-- Header -->
+    <div class="slide-header">
+      <div style="float: left;">{{ page.title }}</div>
+      <div style="float: right;"><a href="/">{{ site.title }}</a></div>
+    </div>
+
     <div class="slides">
       {% assign slides = content | split: '<hr />' %}
       {% for slide in slides %}
@@ -17,15 +45,19 @@
         </section>
       {% endfor %}
     </div>
+    <!-- Footer -->
+    <div class="slide-footer">
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
   <script>
     Reveal.initialize({
-      controls: true,
+      controls: false,
       progress: true,
       center: true,
       hash: true,
       transition: 'slide',
+      slideNumber: 'c/t'
     });
   </script>
 </body>
