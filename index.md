@@ -28,3 +28,7 @@ studies ancient human DNA.
 - [Workshop 4: Comparative Analysis of Multiple Ancient Samples](workshops/workshop_4/workshop_4_instructions/index.html)
 - [Workshop 5: Authenticating Ancient DNA and Quality Control](workshops/workshop_5/workshop_5_instructions/index.html)
 - [Workshop 6: Reproducibility and Collaboration](workshops/workshop_6/workshop_6_instructions/index.html)
+
+---
+
+<a href="https://bu-bioinfo-ms.github.io/computational_workshops">Bioinformatics Computational Workshops</a> © 2025 by <a href="https://creativecommons.org">Adam Labadorf and Boston University</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
