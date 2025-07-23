@@ -45,5 +45,8 @@ footer: <a href="../workshop_1_instructions/index.html">Back to workshop 1</a>
 ## Getting Started: Example LLM Prompt
 
 ```
-I need to download a small ancient mitochondrial genome FASTA file from a public database. Please generate Python code to download the file, read the sequence, and calculate its length and GC content.
+I need to download a small ancient mitochondrial genome FASTA
+file from a public database. Please generate Python code to
+download the file, read the sequence, and calculate its
+length and GC content.
 ```
