@@ -1,28 +1,28 @@
 # GitHub Actions CI/CD Setup
 
-This repository now uses a custom GitHub Actions workflow to build and deploy the Jekyll site instead of the default GitHub Pages build process.
+This repository now uses GitHub's auto-generated Jekyll workflow to build and deploy the site instead of the default GitHub Pages build process.
 
 ## Workflow Overview
 
-The workflow (`.github/workflows/jekyll.yml`) performs the following steps:
+GitHub automatically created a Jekyll workflow that:
 
-1. **Triggers**: Runs on pushes to `main`/`master` branches, pull requests, and manual dispatch
-2. **Build Job**: 
-   - Sets up Ruby 3.1 environment
-   - Installs dependencies using Bundler
-   - Builds the Jekyll site with production settings
-   - Uploads the built site as an artifact
-3. **Deploy Job**: 
-   - Deploys the built site to GitHub Pages
-   - Only runs for pushes to main/master branches
+1. **Triggers**: Runs on pushes to the main branch and can be manually triggered
+2. **Build Process**: 
+   - Sets up the appropriate Ruby environment
+   - Installs Jekyll and dependencies
+   - Builds the site with Jekyll
+   - Uploads the built site as a Pages artifact
+3. **Deploy Process**: 
+   - Automatically deploys to GitHub Pages
+   - Updates the live site at your GitHub Pages URL
 
-## Required Repository Settings
+## Repository Configuration
 
-To enable this workflow, you need to configure your repository settings:
+The workflow was enabled when you:
 
-1. Go to your repository's **Settings** → **Pages**
-2. Under "Source", select **GitHub Actions**
-3. The workflow will automatically deploy to GitHub Pages on successful builds
+1. Went to your repository's **Settings** → **Pages**
+2. Selected **GitHub Actions** as the source
+3. GitHub automatically detected your Jekyll site and created the appropriate workflow
 
 ## Dependencies
 
@@ -52,10 +52,11 @@ bundle exec jekyll serve
 - **Missing dependencies**: Ensure all required gems are listed in the Gemfile
 - **Theme issues**: Verify the minimal-mistakes-jekyll theme is properly configured
 
-## Benefits of Custom Workflow
+## Benefits of GitHub Actions Workflow
 
-- Full control over the build environment
-- Ability to use any Jekyll plugins (not limited to GitHub Pages whitelist)
-- Better error reporting and debugging
-- Faster builds with dependency caching
-- Support for custom build steps if needed
+- **Automatic setup**: GitHub detected your Jekyll site and created the optimal workflow
+- **Plugin support**: Can use any Jekyll plugins (not limited to GitHub Pages whitelist)
+- **Better reliability**: More robust than the legacy GitHub Pages build process
+- **Detailed logging**: Clear build logs and error reporting in the Actions tab
+- **Dependency caching**: Faster builds through automatic dependency caching
+- **Maintenance-free**: GitHub maintains and updates the workflow template
