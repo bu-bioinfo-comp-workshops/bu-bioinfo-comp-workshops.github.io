@@ -1,0 +1,3 @@
+[submodule "workshops/workshop_1/workshop_1"]
+	path = workshops/workshop_1/workshop_1
+	url = git@github.com:bu-bioinfo-comp-workshops/workshop_1.git
