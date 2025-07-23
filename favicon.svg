@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- DNA double helix structure -->
+  <g stroke="#60a5fa" stroke-width="1.5" fill="none">
+    <!-- Left strand -->
+    <path d="M8 6 Q12 10 8 14 Q4 18 8 22 Q12 26 8 30" opacity="0.8"/>
+    <!-- Right strand -->
+    <path d="M24 6 Q20 10 24 14 Q28 18 24 22 Q20 26 24 30" opacity="0.8"/>
+    <!-- Base pairs -->
+    <line x1="8" y1="8" x2="24" y2="8" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="8" y1="12" x2="24" y2="12" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="8" y1="16" x2="24" y2="16" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="8" y1="20" x2="24" y2="20" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="8" y1="24" x2="24" y2="24" stroke="#fbbf24" stroke-width="1"/>
+  </g>
+  
+  <!-- Computer/computational element -->
+  <rect x="12" y="22" width="8" height="6" rx="1" fill="#10b981" opacity="0.9"/>
+  <rect x="13" y="23" width="6" height="3" fill="#065f46"/>
+  <circle cx="14.5" cy="27" r="0.5" fill="#34d399"/>
+  <circle cx="17.5" cy="27" r="0.5" fill="#34d399"/>
+  
+  <!-- Small data points/nodes -->
+  <circle cx="6" cy="10" r="1" fill="#f59e0b"/>
+  <circle cx="26" cy="10" r="1" fill="#f59e0b"/>
+  <circle cx="6" cy="22" r="1" fill="#f59e0b"/>
+  <circle cx="26" cy="22" r="1" fill="#f59e0b"/>
+</svg>

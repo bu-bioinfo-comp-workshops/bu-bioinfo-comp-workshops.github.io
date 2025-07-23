@@ -29,7 +29,7 @@ url                      : "https://bu-bioinfo-ms.github.io/computation_workshop
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "bu-bioinfo-ms/computation_workshops"
 teaser                   : "/assets/images/ancient_dna.png"
-logo                     : #"/assets/images/ancient_dna.png"
+logo                     : "/favicon.svg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -125,6 +125,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - favicon.ico
 exclude:
   - requirements.txt
   - PROGRESS_NOTES.md
