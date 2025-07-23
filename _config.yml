@@ -25,9 +25,9 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : #"Your Name"
 description              : "Computational Workshops for Biologists and Bioinformaticians"
-url                      : "https://bu-bioinfo-ms.github.io/computational_workshops"
+url                      : "https://bu-bioinfo-comp-workshops.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "bu-bioinfo-ms/computational_workshops"
+repository               : "bu-bioinfo-comp-workshops/bu-bioinfo-comp-workshops.github.io"
 teaser                   : "/assets/images/ancient_dna.png"
 logo                     : "/favicon.svg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
