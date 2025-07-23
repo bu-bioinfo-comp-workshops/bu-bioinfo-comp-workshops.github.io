@@ -19,7 +19,7 @@ studies ancient human DNA.
 - [Workshop Overview](workshop_overview/index.html)
 
 ## Materials
-- [Practical LLM Primer](lectures/practical_llm_primer.html)
+- [Practical LLM Primer](lectures/practical_llm_primer/index.html)
 
 ## Workshops
 - [Workshop 1: Download and Explore Ancient DNA Data](workshops/workshop_1/workshop_1_instructions/index.html)

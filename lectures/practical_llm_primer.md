@@ -28,17 +28,9 @@ The process of breaking down text into tokens is called **tokenization**.
 
 ---
 
-Tokenization example:
+Tokenization example
 
-Original text:
-```
-LLMs give you megasuper powers.
-```
-
-Tokenized text:
-```
-['LL' 'Ms', '  give', ' you', 'meg', 'as', 'uper', ' powers', '.']
-```
+<img src="/assets/images/tokenization.excalidraw.svg" alt="Tokenization Example" width="100%" style="display: block; margin: 0 auto;">
 
 ---
 
@@ -92,17 +84,9 @@ This list of vector indices forms the **token IDs** of the input.
 
 ---
 
-Tokenized text:
-```
-['LL' 'Ms', '  give', ' you', 'meg', 'as', 'uper', ' powers', '.']
-```
+<img src="/assets/images/token_ids.excalidraw.svg" alt="Token IDs Example" width="100%" style="display: block; margin: 0 auto;">
 
-Token IDs (i.e. the vector index of the token in the vocabulary):
-```
-[4178, 22365, 3041, 499, 19262, 300, 3550, 13736, 13]
-```
-
-The embedding matrix is subset based on the token IDs to create the input to the LLM.
+The embedding matrix is subsetted based on the token IDs to create the input to the LLM.
 
 ---
 
@@ -122,7 +106,7 @@ The hidden state is then used to make predictions about what tokens should come 
 
 ---
 
-![LLM Overview](../assets/images/llm_overview.excalidraw.svg)
+<img src="/assets/images/llm_overview.excalidraw.svg" alt="LLM Overview" width="100%" style="display: block; margin: 0 auto;">
 
 ---
 
@@ -306,6 +290,28 @@ or perhaps another city in France?
 NB: You won't typically see the role labels (e.g. "System", "User", "Assistant") in chatbots.
 
 ---
+
+### Context Engineering
+
+"Prompt engineering" has been subsumed into "context engineering".
+
+Context engineering is the process of creating a good context for an LLM which includes but is not limited to the user prompt.
+
+---
+
+# Summary
+
+---
+
+1. LLMs are deep learning models that take text as input and predict what text should come next.
+2. LLMs are trained to recognize patterns in text using large amounts of text data.
+3. The attention mechanism is responsible for tailoring predictions to the given context.
+4. LLMs differ based on their architecture, parameters, and training data.
+
+---
+
+5. The **context** is the text that the applies the attention mechanism to.
+6. The **prompt** is the user input to the LLM and is critical to its behavior.
 
 ---
 
