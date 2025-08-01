@@ -10,9 +10,12 @@ toc_sticky: true
 ## Introduction
 In this workshop, you will build on your skills by working with a much larger ancient genome dataset. The file is too large to process on your laptop, so you will learn how to use a compute cluster to perform your analysis. You will use LLMs to help adapt your scripts for large files and to run jobs on the cluster. This workshop is designed for students with little prior experience using high-performance computing resources.
 
+## Template Repo
+- [Workshop 2: Template Repo](https://github.com/bu-bioinfo-comp-workshops/workshop_2)
+
 ## Supporting Materials
-- [Workshop 2: Intro Slides](workshop_2_introduction_slides.html)
-- [Workshop 2: Background Slides](workshop_2_background_slides.html)
+- [Workshop 2: Intro Slides](workshop_2_introduction_slides/index.html)
+- [Workshop 2: Background Slides](workshop_2_background_slides/index.html)
 
 ## Problem Statement
 You have received a full ancient genome dataset (>100M base pairs) from your lab. Your PI wants you to calculate the same basic statistics as before (sequence length, GC content), but the file is too large to handle locally. Your job is to:
