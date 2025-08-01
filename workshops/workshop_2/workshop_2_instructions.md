@@ -1,6 +1,8 @@
 ---
 title: Workshop 2 Instructions
-layout: default
+layout: single
+toc: true
+toc_sticky: true
 ---
 
 # Workshop 2: Scaling Up and Using the Compute Cluster
