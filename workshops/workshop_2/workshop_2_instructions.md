@@ -40,7 +40,10 @@ You have received a full ancient genome dataset (>100M base pairs) from your lab
 
 ## Sample Initial Prompt
 ```
-I need to process a large ancient genome FASTA file (>100M bp) that is too big for my laptop. Please generate Python code to efficiently compute sequence length and GC content, and provide an example qsub script to run this analysis on a compute cluster.
+I need to process a large ancient genome FASTA file (>100M bp)
+that is too big for my laptop. Please generate Python code to
+efficiently compute sequence length and GC content, and provide
+an example qsub script to run this analysis on a compute cluster.
 ```
 
 ## Deliverables
