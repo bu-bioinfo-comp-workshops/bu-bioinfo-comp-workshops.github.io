@@ -8,7 +8,7 @@ toc_sticky: true
 # Workshop 2: Scaling Up and Using the Compute Cluster
 
 ## Introduction
-In this workshop, you will build on your skills by working with a much larger ancient genome dataset. The file is too large to process on your laptop, so you will learn how to use a compute cluster to perform your analysis. You will use LLMs to help adapt your scripts for large files and to run jobs on the cluster. This workshop is designed for students with little prior experience using high-performance computing resources.
+In this workshop, you will build on your skills by working with a much larger bacterial genome dataset. We will pretend that the file is too large to process on your laptop, so you will learn how to use a compute cluster to perform your analysis. You will use LLMs to help adapt your scripts for large files and to run jobs on the cluster. This workshop is designed for students with little prior experience using high-performance computing resources.
 
 ## Template Repo
 - [Workshop 2: Template Repo](https://github.com/bu-bioinfo-comp-workshops/workshop_2)
@@ -18,8 +18,8 @@ In this workshop, you will build on your skills by working with a much larger an
 - [Workshop 2: Background Slides](../workshop_2_background_slides/index.html)
 
 ## Problem Statement
-You have received a full ancient genome dataset (>100M base pairs) from your lab. Your PI wants you to calculate the same basic statistics as before (sequence length, GC content), but the file is too large to handle locally. Your job is to:
-- Download a large ancient genome FASTA file from a public resource (e.g., AADR or NCBI)
+You have received a large bacterial genome dataset (>100M base pairs) from your lab. Your PI wants you to calculate the same basic statistics as before (sequence length, GC content), but the file is too large to handle locally. Your job is to:
+- Download a large bacterial genome FASTA file from a public resource (e.g. NCBI)
 - Adapt your code to efficiently process large files
 - Submit your analysis as a job to the compute cluster (using qsub or similar)
 - Summarize your findings in a brief report
@@ -40,36 +40,59 @@ You have received a full ancient genome dataset (>100M base pairs) from your lab
 
 ## Sample Initial Prompt
 ```
-I need to process a large ancient genome FASTA file (>100M bp)
+I need to process a large bacterial genome FASTA file (>100M bp)
 that is too big for my laptop. Please generate Python code to
 efficiently compute sequence length and GC content, and provide
 an example qsub script to run this analysis on a compute cluster.
 ```
 
+## Milestone 1
+- Download a bacterial genome of your choice from NCBI (https://www.ncbi.nlm.nih.gov/datasets/genome/)
+using FTP and wrap it in a qsub script
+- Submit your job to the compute cluster
+- Monitor your job's progress
+
+## Milestone 2
+- Adapt your download script to use NCBI Datasets CLI to download the bacterial genome
+- Generate a python script to calculate the sequence length and GC content
+- Generate a qsub script that submits your python code to generate the sequence length and GC content
+
+## Milestone 3
+- Adapt your python code to use `argparse` to elegantly handle command-line arguments
+- Adapt your python code to enable  writing out GC content and length to separately named files
+
+## Milestone 4
+- Adapt your qsub script to request a different amount of resources
+
+
+
 ## Deliverables
 By the end of this workshop, you will have created the following artifacts:
 
 1. **Downloaded Large FASTA File**
-   - A large ancient genome sequence file (FASTA format) obtained from a public database (e.g., AADR or NCBI).
-   - Example: `ancient_genome.fasta`
+   - A bacterial genome sequence file (FASTA format) obtained from a public database (e.g., NCBI).
+   - Example: `bacterial_genome.fasta`
 
 2. **Efficient Python Analysis Script**
    - A well-documented Python script that:
      - Reads the large FASTA file efficiently (e.g., streaming)
      - Computes sequence length and GC content
      - Prints or saves the results in a readable format
-   - Example: `analyze_large_genome.py`
+     - Has command-line arguments for input and output files
+     - Allows you to name the outputs of GC content and length separately
+   - Example: `analyze_bacterial_genome.py`
 
 3. **Cluster Job Submission Script**
    - A script for submitting your Python analysis to the compute cluster (e.g., qsub script)
+   - A modified script that requests a different amount of resources
    - Example: `run_analysis.qsub`
 
 4. **Results Output**
    - A text or markdown file summarizing:
-     - The sequence length
+     - The sequence length 
      - The GC content (as a percentage)
      - Any additional notes or observations
-   - Example: `large_genome_results.md` or `large_genome_results.txt`
+   - Example: `bacterial_genome_results.md` or `bacterial_genome_results.txt`
 
 5. **Brief Report**
    - A short markdown report (1–2 paragraphs) summarizing your approach, the results, and any challenges encountered. This should be clear enough to share with your PI or collaborators.

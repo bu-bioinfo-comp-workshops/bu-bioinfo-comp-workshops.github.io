@@ -8,8 +8,8 @@ footer: <a href="../workshop_2_instructions/index.html">Back to workshop 2</a>
 
 ---
 
-## Ancient Genomes: New Challenges
-- Ancient genome files can be hundreds of millions of base pairs
+## Large Genomes: New Challenges
+- Large genome files can be hundreds of millions of base pairs
 - File size and complexity require efficient code and high-performance computing
 
 ---

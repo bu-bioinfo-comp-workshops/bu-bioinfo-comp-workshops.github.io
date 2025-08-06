@@ -8,9 +8,9 @@ footer: <a href="../workshop_2_instructions/index.html">Back to workshop 2</a>
 
 ---
 
-## Scaling Up: Ancient Genome Analysis on the Cluster
+## Scaling Up: Large Genome Analysis on the Cluster
 
-- You now have a much larger dataset: a full ancient genome (>100M bp)
+- You now have a much larger dataset: a full bacterial genome (>100M bp)
 - The file is too big for your laptop! Time to use the compute cluster.
 - You'll learn to adapt your scripts and submit jobs to the cluster with LLM assistance.
 
@@ -18,7 +18,7 @@ footer: <a href="../workshop_2_instructions/index.html">Back to workshop 2</a>
 
 ## Problem Statement
 
-- Download a large ancient genome FASTA file from a public database.
+- Download a large genome FASTA file from a public database.
 - Adapt your code to efficiently process large files.
 - Submit your analysis as a job to the compute cluster (qsub).
 - Summarize your findings for your PI.
@@ -46,7 +46,7 @@ footer: <a href="../workshop_2_instructions/index.html">Back to workshop 2</a>
 ## Getting Started: Example LLM Prompt
 
 ```
-I need to process a large ancient genome FASTA file (>100M bp)
+I need to process a large genome FASTA file (>100M bp)
 that is too big for my laptop. Please generate Python code to
 efficiently compute sequence length and GC content, and provide
 an example qsub script to run this analysis on a compute cluster.
