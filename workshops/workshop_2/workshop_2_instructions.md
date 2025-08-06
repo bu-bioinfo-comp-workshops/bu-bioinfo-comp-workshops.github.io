@@ -48,21 +48,47 @@ an example qsub script to run this analysis on a compute cluster.
 ```
 
 ## Milestone 1
+
+*Topics and Concepts*
+- wget and FTP
+- Qsub scripts
+- Basic job monitoring
+
+*Tasks*
 - Download a bacterial genome of your choice from NCBI (https://www.ncbi.nlm.nih.gov/datasets/genome/)
 using FTP and wrap it in a qsub script
 - Submit your job to the compute cluster
 - Monitor your job's progress
 
 ## Milestone 2
+
+*Topics and Concepts*
+- Using third party tools
+- Python script and qsub script
+- Conda environments - YML files
+
+*Tasks*
 - Adapt your download script to use NCBI Datasets CLI to download the bacterial genome
 - Generate a python script to calculate the sequence length and GC content
 - Generate a qsub script that submits your python code to generate the sequence length and GC content
 
 ## Milestone 3
+
+*Topics and Concepts*
+- Argparse
+- Writing out files
+
+*Tasks*
 - Adapt your python code to use `argparse` to elegantly handle command-line arguments
 - Adapt your python code to enable  writing out GC content and length to separately named files
 
 ## Milestone 4
+
+*Topics and Concepts*
+- Resource requests
+- Advanced job tracking
+
+*Tasks*
 - Adapt your qsub script to request a different amount of resources
 
 
