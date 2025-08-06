@@ -12,6 +12,7 @@ In this workshop, you will build on your skills by working with a much larger ba
 
 ## Template Repo
 - [Workshop 2: Template Repo](https://github.com/bu-bioinfo-comp-workshops/workshop_2)
+- [Github Classroom Link](https://classroom.github.com/a/ba_HL2g3)
 
 ## Supporting Materials
 - [Workshop 2: Intro Slides](../workshop_2_introduction_slides/index.html)
