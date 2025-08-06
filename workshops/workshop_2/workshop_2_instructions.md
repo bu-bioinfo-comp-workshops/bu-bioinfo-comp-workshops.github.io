@@ -51,12 +51,14 @@ an example qsub script to run this analysis on a compute cluster.
 
 *Topics and Concepts*
 - wget and FTP
-- Qsub scripts
+- Qsub scripts / Shell scripts
 - Basic job monitoring
 
 *Tasks*
 - Download a bacterial genome of your choice from NCBI (https://www.ncbi.nlm.nih.gov/datasets/genome/)
-using FTP and wrap it in a qsub script
+using FTP and wrap it in a shell script
+- Write python code to calculate the sequence length and GC content in a script
+- Reformat your script to a qsub script
 - Submit your job to the compute cluster
 - Monitor your job's progress
 
