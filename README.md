@@ -2,7 +2,7 @@
 
 ## Site
 
-[Computational Workshops](https://bu-bioinfo-ms.github.io/computational_workshops)
+[Computational Workshops](https://bu-bioinfo-comp-workshops.github.io/)
 
 ## Purpose
 
