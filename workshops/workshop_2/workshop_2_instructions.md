@@ -47,6 +47,13 @@ efficiently compute sequence length and GC content, and provide
 an example qsub script to run this analysis on a compute cluster.
 ```
 
+## Clone the github classroom repository
+Clone the github classroom repository and open your VSCode session within the
+repo. 
+
+Try and accomplish the following milestones working directly in the repo
+you create.
+
 ## Milestone 1
 
 *Topics and Concepts*
