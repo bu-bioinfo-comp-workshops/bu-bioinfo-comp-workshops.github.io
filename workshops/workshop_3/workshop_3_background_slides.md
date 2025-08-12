@@ -1,6 +1,7 @@
 ---
 title: Workshop 3 Background Slides
-layout: default
+layout: slides
+footer: <a href="../workshop_3_instructions/index.html">Back to workshop 3</a>
 ---
 
 # Workshop 3 Background Slides
@@ -17,14 +18,88 @@ layout: default
 ## Introduction to Snakemake
 - Snakemake uses rules to define how files are created from input data
 - Rules specify input, output, scripts, and resources
-- Workflows are defined in a Snakefile (Python-like syntax)
+- Workflows are defined in a `Snakefile` (Python-like syntax)
 
 ---
 
-## Integrating Python and Snakemake
-- Python scripts can be called from Snakemake rules
-- Parameters and file paths are passed automatically
-- Modular code improves reusability and debugging
+## The `Snakefile`
+
+- A `Snakefile` defines rules for creating files
+- At minimum, a rule has:
+    - a name
+    - `output`: the files the rule creates
+    - `shell`: the shell command that creates the files
+- When creating a file from another file, the rule also has:
+    - `input`: the files the rule depends on
+
+---
+
+## Example Rule
+
+Assume we wrote the script `summarize_genome.py` that accepts a FASTA file as input and creates a summary file as output.
+
+```python
+rule summarize_genome:
+    input:
+        "data/genome.fasta"
+    output:
+        "results/genome_summary.txt"
+    shell:
+        "python scripts/summarize_genome.py {input} {output}"
+```
+
+---
+
+## Example Rule cont'd
+
+```python
+rule summarize_genome:
+    input:
+        "data/genome.fasta"
+    output:
+        "results/genome_summary.txt"
+    shell:
+        "python scripts/summarize_genome.py {input} {output}"
+```
+
+The `input` and `output` values are inserted into the command and executed:
+
+```bash
+python scripts/summarize_genome.py data/genome.fasta \
+    results/genome_summary.txt
+```
+
+---
+
+## The `all` rule
+
+- Snakefiles have a special rule called `all` that defines the files that 
+should be created by the workflow
+- The `all` rule should come first, and only have `input` specified
+
+```python
+rule all:
+    input:
+        "results/genome_summary.txt"
+
+rule summarize_genome:
+    # rule definition from previous
+```
+
+---
+
+<section data-background-image="/assets/images/snakemake_rule.excalidraw.svg" data-background-size="contain">
+</section>
+
+---
+
+## Example Rule cont'd
+
+```
+$ ls
+data scripts Snakefile
+$ snakemake -j 1
+```
 
 ---
 

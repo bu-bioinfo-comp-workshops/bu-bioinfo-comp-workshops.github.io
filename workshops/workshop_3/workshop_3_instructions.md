@@ -1,25 +1,28 @@
 ---
-title: Workshop 3 Instructions
-layout: default
+title: Workshop 3 - Workflow Automation with Snakemake
+layout: single
+toc: true
+toc_sticky: true
 ---
 
-# Workshop 3: Workflow Automation with Snakemake
 
-## Introduction
+# Introduction
 In this workshop, you will learn how to make your genome analysis reproducible and shareable by refactoring your scripts into a Snakemake workflow. You will use Large Language Models (LLMs) to help design, implement, and debug your workflow, and you will run your analysis on the compute cluster. This workshop is designed for students with little prior experience in workflow management or Snakemake.
 
-## Supporting Materials
-- [Workshop 3: Intro Slides](workshop_3_introduction_slides.html)
-- [Workshop 3: Background Slides](workshop_3_background_slides.html)
+# Template Repo
 
-## Problem Statement
+# Supporting Materials
+- [Workshop 3: Intro Slides](../workshop_3_introduction_slides/index.html)
+- [Workshop 3: Background Slides](../workshop_3_background_slides/index.html)
+
+# Problem Statement
 Your PI wants your ancient genome analysis to be reproducible and easy for other lab members to use. Your job is to:
 - Refactor your scripts from previous workshops into a Snakemake workflow
 - Automate the steps for downloading data, running sequence analysis, and summarizing results
 - Run your workflow on the compute cluster
 - Summarize your workflow and findings in a brief report
 
-## Technical Skills Introduced
+# Technical Skills Introduced
 - Using VS Code and git for collaborative workflow development
 - Introduction to workflow management with Snakemake
 - Writing and debugging Snakemake rules
@@ -27,19 +30,43 @@ Your PI wants your ancient genome analysis to be reproducible and easy for other
 - Submitting Snakemake jobs to a compute cluster
 - Prompt engineering and iterative debugging with LLMs
 
-## Workshop Structure
+# Workshop Structure
 1. **Setup:** Clone your workshop repository from GitHub Classroom, set up your environment, and review your previous scripts.
 2. **Workflow Design:** Use LLMs to help you design a Snakemake workflow for your analysis pipeline.
 3. **Implementation:** Prompt the LLM to help you write Snakemake rules for each analysis step (download, analysis, reporting).
 4. **Cluster Execution:** Use LLMs to help you generate and debug cluster job submission for Snakemake workflows.
 5. **Reporting:** Summarize your workflow and findings in a short markdown report. All files should be tracked in git and pushed to GitHub Classroom.
 
-## Sample Initial Prompt
+# Sample Initial Prompt
 ```
-I need to refactor my genome analysis scripts into a Snakemake workflow that downloads an ancient genome FASTA file, computes sequence statistics, and summarizes the results. Please generate a Snakefile and example rule for running the analysis on a compute cluster.
+I need to refactor my genome analysis scripts into a Snakemake workflow that
+downloads an ancient genome FASTA file, computes sequence statistics, and
+summarizes the results. Please generate a Snakefile and example rule for running
+the analysis on a compute cluster.
 ```
 
-## Deliverables
+# Clone the github classroom repository
+Clone the github classroom repository and open your VSCode session within the
+repo. 
+
+Try and accomplish the following milestones working directly in the repo
+you create.
+
+# Milestones
+
+## Milestone 1
+
+*Topics and Concepts*
+- Snakemake workflow design
+- Python script and qsub script
+- Conda environments - YML files
+
+*Tasks*
+- Refactor your scripts into a Snakemake workflow
+- Generate a Snakefile and example rule for running the analysis on a compute cluster
+
+
+# Deliverables
 By the end of this workshop, you will have created the following artifacts:
 
 1. **Snakemake Workflow Files**

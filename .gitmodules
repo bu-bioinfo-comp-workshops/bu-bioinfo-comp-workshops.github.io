@@ -4,3 +4,6 @@
 [submodule "workshops/workshop_2/workshop_2"]
 	path = workshops/workshop_2/workshop_2
 	url = git@github.com:bu-bioinfo-comp-workshops/workshop_2.git
+[submodule "workshops/workshop_3/workshop_3"]
+	path = workshops/workshop_3/workshop_3
+	url = git@github.com:bu-bioinfo-comp-workshops/workshop_3.git

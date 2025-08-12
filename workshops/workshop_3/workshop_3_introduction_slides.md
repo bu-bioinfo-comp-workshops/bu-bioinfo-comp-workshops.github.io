@@ -1,6 +1,7 @@
 ---
 title: Workshop 3 Introduction Slides
-layout: default
+layout: slides
+footer: <a href="../workshop_3_instructions/index.html">Back to workshop 3</a>
 ---
 
 # Workshop 3 Introduction Slides
@@ -53,5 +54,9 @@ layout: default
 ## Getting Started: Example LLM Prompt
 
 ```
-I need to refactor my genome analysis scripts into a Snakemake workflow that downloads an ancient genome FASTA file, computes sequence statistics, and summarizes the results. Please generate a Snakefile and example rule for running the analysis on a compute cluster.
+I need to refactor my genome analysis scripts into a Snakemake
+workflow that downloads an ancient genome FASTA file, computes
+sequence statistics, and summarizes the results. Please generate
+a Snakefile and example rule for running the analysis on a compute
+cluster.
 ```
