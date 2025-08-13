@@ -10,6 +10,7 @@ toc_sticky: true
 In this workshop, you will learn how to make your genome analysis reproducible and shareable by refactoring your scripts into a Snakemake workflow. You will use Large Language Models (LLMs) to help design, implement, and debug your workflow, and you will run your analysis on the compute cluster. This workshop is designed for students with little prior experience in workflow management or Snakemake.
 
 # Template Repo
+- [Workshop 3](https://github.com/bu-bioinfo-comp-workshops/workshop_3)
 
 # Supporting Materials
 - [Workshop 3: Intro Slides](../workshop_3_introduction_slides/index.html)
