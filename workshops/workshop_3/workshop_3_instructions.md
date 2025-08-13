@@ -40,7 +40,7 @@ Your PI wants your ancient genome analysis to be reproducible and easy for other
 # Sample Initial Prompt
 ```
 I need to refactor my genome analysis scripts into a Snakemake workflow that
-downloads an ancient genome FASTA file, computes sequence statistics, and
+downloads a microbial genome FASTA file, runs an external python script, and
 summarizes the results. Please generate a Snakefile and example rule for running
 the analysis on a compute cluster.
 ```
@@ -64,6 +64,49 @@ you create.
 *Tasks*
 - Refactor your scripts into a Snakemake workflow
 - Generate a Snakefile and example rule for running the analysis on a compute cluster
+- Your workflow should download a single FASTA file and run the script you developed last week
+
+
+## Milestone 2
+
+*Topics and Concepts*
+- Third party tools
+
+*Tasks*
+- Instead of using `wget`, use the NCBI Datasets CLI to download the genome
+- Add another rule that will run the tool Prokka to annotate the genome
+
+## Milestone 3
+
+*Topics and Conncepts*
+- Easily test multiple parameters
+- Adding resources per job (threads)
+
+*Tasks*
+- Add another rule that runs `kmer-jellyfish` and counts the numbers of k-mers for
+every value of k from 1-31.
+
+## Milestone 4
+
+*Topics and Concepts*
+- Docker container integration
+- Handling multiple samples
+
+*Task*
+- Swap to using docker containers (singularity) for each tool
+- Instead of one genome, have your workflow download at least three genomes
+- Wrap your sample information in a CSV
+
+## Milestone 5
+
+*Topics and Concepts*
+- Opening computational notebooks in a managed environment
+
+*Tasks*
+- Make a conda environment with `pyCirclize` and `seaborn` installed
+- Open a notebook and do the following:
+   1. Generate a circos plot for the genome annotations from Prokka
+   2. Graph the values of the k-mer counting for each tool
 
 
 # Deliverables
@@ -75,7 +118,7 @@ By the end of this workshop, you will have created the following artifacts:
 
 2. **Integrated Python Scripts**
    - Python scripts for sequence analysis, adapted for use within the Snakemake workflow
-   - Example: `scripts/analyze_mtDNA.py`
+   - Example: `scripts/gc_content.py`
 
 3. **Cluster Submission Script**
    - A script or command for running your Snakemake workflow on the compute cluster (e.g., with qsub or Snakemake's cluster integration)
