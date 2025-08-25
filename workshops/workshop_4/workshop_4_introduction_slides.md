@@ -1,6 +1,7 @@
 ---
 title: Workshop 4 Introduction Slides
-layout: default
+layout: slides
+footer: <a href="../workshop_4_instructions/index.html">Back to workshop 4</a>
 ---
 
 # Workshop 4 Introduction Slides
@@ -45,5 +46,9 @@ layout: default
 ## Getting Started: Example LLM Prompt
 
 ```
-I need to download and analyze multiple ancient mitochondrial genome FASTA files from a public database. Please generate Snakemake rules and Python code to batch process each sample, compute sequence statistics, and generate a comparative GC content plot.
+I need to download and analyze multiple ancient mitochondrial
+genome FASTA files from a public database. Please generate
+Snakemake rules and Python code to batch process each sample,
+compute sequence statistics, and generate a comparative GC
+content plot.
 ```

@@ -40,10 +40,11 @@ Your PI wants your ancient genome analysis to be reproducible and easy for other
 
 # Sample Initial Prompt
 ```
-I need to refactor my genome analysis scripts into a Snakemake workflow that
-downloads a microbial genome FASTA file, runs an external python script, and
-summarizes the results. Please generate a Snakefile and example rule for running
-the analysis on a compute cluster.
+I need to refactor my genome analysis scripts into a Snakemake
+workflow that downloads a microbial genome FASTA file, runs an
+external python script, and summarizes the results. Please
+generate a Snakefile and example rule for running the analysis
+on a compute cluster.
 ```
 
 # Clone the github classroom repository

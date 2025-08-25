@@ -1,6 +1,7 @@
 ---
 title: Workshop 4 Background Slides
-layout: default
+layout: slides
+footer: <a href="../workshop_4_instructions/index.html">Back to workshop 4</a>
 ---
 
 # Workshop 4 Background Slides
@@ -20,9 +21,146 @@ layout: default
 
 ---
 
-## Python for Comparative Analysis
-- Loop over files and aggregate results
-- Use pandas and matplotlib for data analysis and visualization
+## Generalizing Rules with Wildcards
+- *Wildcards* define patterns in file names
+- Defined with curly braces: `"{sample}.txt"`
+- Strings with wildcards are provided to `input` and `output` cluases in rule definitions
+
+---
+
+## Wildcard example
+
+```python
+rule calculate_gc:
+    input:
+        "data/{sample}.fasta"
+    output:
+        "results/{sample}_gc.txt"
+    shell:
+        "python scripts/gc_content.py {input} > {output}"
+```
+
+`{sample}` is a wildcard that is defined in the rule definition.
+
+---
+
+```python
+rule all:
+    input:
+        "results/sampleA_gc.txt"
+
+rule calculate_gc:
+    input:
+        "data/{sample}.fasta"
+    output:
+        "results/{sample}_gc.txt"
+    shell:
+        "python scripts/gc_content.py {input} > {output}"
+```
+
+Snakemake will run:
+
+```
+python scripts/gc_content.py data/sampleA_gc.txt > \
+    results/sampleA_gc.txt
+```
+
+---
+
+
+<section data-background-image="/assets/images/snakemake_rule_wildcard.excalidraw.svg" data-background-size="contain">
+</section>
+
+---
+
+```python
+rule all:
+    input:
+        "results/sampleA_gc.txt",
+        "results/sampleB_gc.txt",
+        "results/sampleC_gc.txt"
+
+rule calculate_gc:
+    input:
+        "data/{sample}.fasta"
+    output:
+        "results/{sample}_gc.txt"
+    shell:
+        "python scripts/gc_content.py {input} > {output}"
+```
+
+Snakemake will run the rule three times, once for each sample in the `input` of rule `all`.
+
+---
+
+## The `expand()` function
+
+- Snakemake defines a function called `expand()` that can be used to generate a list of files based on a pattern
+- It accepts two arguments:
+    - A string with one or more wildcard patterns
+    - Named arguments for each wildcard that accept lists of values
+
+---
+
+## `expand()` example
+
+```python
+samples = ["sampleA", "sampleB", "sampleC"]
+expand("results/{sample}_gc.txt", sample=samples)
+```
+
+produces a list of strings:
+
+```python
+["results/sampleA_gc.txt",
+ "results/sampleB_gc.txt",
+ "results/sampleC_gc.txt"]
+```
+---
+
+## Complete example
+
+```python
+
+samples = ["sampleA", "sampleB", "sampleC"]
+rule all:
+    input:
+        expand("results/{sample}_gc.txt", sample=samples)
+
+rule calculate_gc:
+    input:
+        "data/{sample}.fasta"
+    output:
+        "results/{sample}_gc.txt"
+    shell:
+        "python scripts/gc_content.py {input} > {output}"
+```
+
+---
+
+## Running multiple jobs
+
+```
+$ ls
+data scripts Snakefile
+$ snakemake -j 3 # ← run all three jobs concurrently
+```
+ 
+---
+
+# Genome Statistics
+
+---
+
+## Basic Genomic Characteristics
+
+- GC content
+- Sequence length
+- k-mer frequency
+
+---
+
+## Genome Complexity
 
 ---
 

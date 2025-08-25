@@ -1,44 +1,68 @@
 ---
-title: Workshop 4 Instructions
-layout: default
+title: Workshop 4 - Comparative Analysis of Multiple Ancient Samples
+layout: single
+toc: true
+toc_sticky: true
 ---
 
-# Workshop 4: Comparative Analysis of Multiple Ancient Samples
-
-## Introduction
+# Introduction
 In this workshop, you will extend your workflow to handle and compare multiple ancient mitochondrial genome samples. You will use Snakemake and LLMs to automate batch downloads, run analyses on many samples, and generate comparative plots. This workshop is designed for students with little prior experience handling multiple datasets or comparative genomics.
 
-## Supporting Materials
-- [Workshop 4: Intro Slides](workshop_4_introduction_slides.html)
-- [Workshop 4: Background Slides](workshop_4_background_slides.html)
+# Template Repo
+- [Workshop 4](https://github.com/bu-bioinfo-comp-workshops/workshop_4)
 
-## Problem Statement
+# Supporting Materials
+- [Workshop 4: Intro Slides](../workshop_4_introduction_slides/index.html)
+- [Workshop 4: Background Slides](../workshop_4_background_slides/index.html)
+
+# Problem Statement
 The excavation has yielded several bone samples from different individuals. Your PI wants to know how these ancient mitochondrial genomes compare to each other and to modern samples. Your job is to:
 - Download multiple ancient mitochondrial genome FASTA files from a public resource (e.g., AADR or NCBI)
 - Automate the analysis to compute statistics (sequence length, GC content) for each sample
 - Generate comparative plots (e.g., GC content distribution)
 - Summarize your approach and findings in a brief report
 
-## Technical Skills Introduced
+# Technical Skills Introduced
 - Using Snakemake for batch processing and automation
 - Downloading and managing multiple datasets
 - Python scripting for looping over files and comparative analysis
 - Generating plots with Python (matplotlib or similar)
 - Prompt engineering and iterative debugging with LLMs
 
-## Workshop Structure
+# Workshop Structure
 1. **Setup:** Clone your workshop repository from GitHub Classroom, set up your environment, and review your previous workflow.
 2. **Batch Data Acquisition:** Use LLMs and Snakemake to automate downloading multiple FASTA files from a public database.
 3. **Automated Analysis:** Prompt the LLM to help you adapt your workflow to process each sample and collect statistics.
 4. **Comparative Visualization:** Use LLMs and Python to generate comparative plots of GC content and sequence length across samples.
 5. **Reporting:** Summarize your approach and findings in a short markdown report. All files should be tracked in git and pushed to GitHub Classroom.
 
-## Sample Initial Prompt
+# Sample Initial Prompt
 ```
-I need to download and analyze multiple ancient mitochondrial genome FASTA files from a public database. Please generate Snakemake rules and Python code to batch process each sample, compute sequence statistics, and generate a comparative GC content plot.
+I need to download and analyze multiple ancient mitochondrial genome FASTA
+files from a public database. Please generate Snakemake rules and Python
+code to batch process each sample, compute sequence statistics, and
+generate a comparative GC content plot.
 ```
+# Clone the github classroom repository
+Clone the github classroom repository and open your VSCode session within the
+repo. 
 
-## Deliverables
+Try and accomplish the following milestones working directly in the repo
+you create.
+
+# Milestones
+
+## Milestone 1
+
+*Topics and Concepts*
+- Batch downloading with Snakemake
+- Using a CSV to store sample information
+
+*Tasks*
+- Use the NCBI Datasets CLI to download multiple ancient mitochondrial genome FASTA files from a public database
+- 
+
+# Deliverables
 By the end of this workshop, you will have created the following artifacts:
 
 1. **Batch-Processing Snakemake Workflow**
