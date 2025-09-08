@@ -1,12 +1,12 @@
 ---
-title: Workshop 4 - Comparative Analysis of Multiple Ancient Samples
+title: Workshop 4 - Comparative Analysis of Multiple Samples
 layout: single
 toc: true
 toc_sticky: true
 ---
 
 # Introduction
-In this workshop, you will extend your workflow to handle and compare multiple ancient mitochondrial genome samples. You will use Snakemake and LLMs to automate batch downloads, run analyses on many samples, and generate comparative plots. This workshop is designed for students with little prior experience handling multiple datasets or comparative genomics.
+In this workshop, you will extend your workflow to handle and compare multiple microbe genomes. You will use Snakemake and LLMs to automate batch downloads, run analyses on many samples, and generate comparative plots. This workshop is designed for students with little prior experience handling multiple datasets or comparative genomics.
 
 # Template Repo
 - [Workshop 4](https://github.com/bu-bioinfo-comp-workshops/workshop_4)
@@ -16,8 +16,8 @@ In this workshop, you will extend your workflow to handle and compare multiple a
 - [Workshop 4: Background Slides](../workshop_4_background_slides/index.html)
 
 # Problem Statement
-The excavation has yielded several bone samples from different individuals. Your PI wants to know how these ancient mitochondrial genomes compare to each other and to modern samples. Your job is to:
-- Download multiple ancient mitochondrial genome FASTA files from a public resource (e.g., AADR or NCBI)
+A collection of microbe genome samples has been obtained from different environments. Your PI wants to know how these microbe genomes compare to each other and to reference genomes. Your job is to:
+- Download multiple microbe genome FASTA files from a public resource (e.g., NCBI)
 - Automate the analysis to compute statistics (sequence length, GC content) for each sample
 - Generate comparative plots (e.g., GC content distribution)
 - Summarize your approach and findings in a brief report
@@ -38,10 +38,7 @@ The excavation has yielded several bone samples from different individuals. Your
 
 # Sample Initial Prompt
 ```
-I need to download and analyze multiple ancient mitochondrial genome FASTA
-files from a public database. Please generate Snakemake rules and Python
-code to batch process each sample, compute sequence statistics, and
-generate a comparative GC content plot.
+I need to download and analyze multiple microbe genome FASTA files from a public database. Please generate Snakemake rules and Python code to batch process each sample, compute sequence statistics, and generate a comparative GC content plot.
 ```
 # Clone the github classroom repository
 Clone the github classroom repository and open your VSCode session within the
@@ -55,12 +52,52 @@ you create.
 ## Milestone 1
 
 *Topics and Concepts*
+- Generalized Snakemake rules using wildcards
 - Batch downloading with Snakemake
 - Using a CSV to store sample information
 
 *Tasks*
-- Use the NCBI Datasets CLI to download multiple ancient mitochondrial genome FASTA files from a public database
-- 
+- Browse NCBI datasets to identify at least three microbe genomes from a public database. Locate the accession numbers of the genomes you wish to download.
+- Store the accession numbers in a CSV file or as a python list at the top of your Snakefile.
+- Write a Snakemake rule that uses wildcards to generalize the genome download by constructing output fasta file names from the accession number.
+- Use the NCBI Datasets CLI to download the genomes as fasta files using the accession numbers you identified before.
+
+## Milestone 2
+
+*Topics and Concepts*
+- Executing Snakemake workflow with multiple samples
+
+*Tasks*
+- Execute the Snakemake workflow with multiple samples
+- Submit jobs on the compute cluster
+
+## Milestone 4
+
+*Topics and Concepts*
+- Genome statistics, including GC content 
+- Organizing results into a single file
+
+*Tasks*
+- Organize the results of the individual genome analysis jobs into a single CSV file, where rows are genomes and columns are statistics
+
+## Milestone 5
+
+*Topics and Concepts*
+- k-mer based GC Content Distributions
+
+*Tasks*
+- Write a python script or snakemake rule that decomposes a given genome sequence into $k$-mers and computes the GC content of each $k$-mer
+- As an LLM for guidance on how to implement this analysis
+
+## Milestone 6
+
+*Topics and Concepts*
+- Comparative genome statistics
+
+*Tasks*
+- Generate comparative genome statistics for the genomes you downloaded. We will compare the overall GC content you calculated, as well as the k-mer based GC content distributions.
+- Generate a simple table of overall GC content for each genome.
+- Generate histograms of the k-mer based GC content distributions. You may consider adding the overall GC content as a notation on the plot. You might also consider adding all GC content distributions on a single plot for the purposes of comparison.
 
 # Deliverables
 By the end of this workshop, you will have created the following artifacts:
@@ -70,11 +107,12 @@ By the end of this workshop, you will have created the following artifacts:
    - Example: `Snakefile`, `config.yaml`, `rules/`
 
 2. **Automated Analysis Scripts**
-   - Python scripts for looping over multiple FASTA files and computing statistics
-   - Example: `scripts/analyze_multiple.py`
+   - Python scripts for computing overall GC content and k-mer based GC content distributions
+  - Example: `scripts/compute_gc_content.py`
+  - Example: `scripts/compute_kmer_gc_content_distribution.py`
 
-3. **Comparative Plots**
-   - Plots comparing GC content and sequence length across samples (e.g., bar plots, boxplots)
+3. **Comparative Tables and Plots**
+   - Tables comparing GC content across samples
    - Example: `results/gc_content_comparison.png`, `results/sequence_length_comparison.png`
 
 4. **Workflow Output Results**
