@@ -1,4 +1,10 @@
-Practical LLM Primer
-====================
+Understanding and Using Large Language Models: A Practical Primer
+================================================================
 
-Large language models (LLMs) are generative AI models that have been trained on huge collections of natural language text and computer code. Since LLMs gained mainstream attention in the early 2020s,these models have fundamentally transformed how 
+This seminar provides a practical introduction to large language models
+(LLMs), covering their fundamental architecture, training processes, and
+practical applications. Attendees will learn how LLMs process text through
+tokenization and attention mechanisms, understand the difference between
+training and inference, and learn basic prompt engineering techniques. The
+session combines technical concepts with practical guidance for optimizing LLM
+interactions through context engineering.
