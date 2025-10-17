@@ -40,7 +40,7 @@ The vocabulary is fixed for a given LLM.
 
 The number of tokens in the vocabulary is called the **vocabulary size**.
 
-Modern LLMs have vocabulary sizes of ~30k-50k tokens.
+Modern LLMs have vocabulary sizes of ~30k-100k tokens.
 
 ---
 
