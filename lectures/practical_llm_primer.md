@@ -203,7 +203,7 @@ The *N* tokens currently visible to the model are called the **context window**.
 
 ---
 
-![ChatGPT Context](../assets/images/chatgpt_context.excalidraw.svg)
+<img src="/assets/images/chatgpt_context.excalidraw.svg" alt="ChatGPT Context Example" width="100%" style="display: block; margin: 0 auto;">
 
 ---
 
