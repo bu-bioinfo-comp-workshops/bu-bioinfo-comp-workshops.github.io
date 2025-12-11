@@ -1,9 +1,22 @@
 ---
-title: Practical LLM Primer
+title: "Practical LLM Primer"
+sub_title: "Understanding the fundamentals of Large Language Models"
+author: "BU Bioinformatics Graduate Program"
 layout: slides
+options:
+    end_slide_shorthand: true
 ---
 
-# Practical LLM Primer
+Session 0: Practical LLM Primer
+===
+
+**Learning Objectives:**
+- Understand what large language models are and how they work
+- Learn about tokens, embeddings, and the attention mechanism
+- Understand context windows and their importance
+- Learn about prompting and context engineering basics
+- Connect theoretical concepts to practical usage
+
 ---
 
 ## What is a large language model (LLM)?
@@ -299,19 +312,57 @@ Context engineering is the process of creating a good context for an LLM which i
 
 ---
 
-# Summary
+Key Takeaways
+===
+
+1. **LLMs** are deep learning models that predict next tokens based on input text
+2. **Training** involves learning patterns from large text corpora using pre-training
+3. **Attention mechanism** is responsible for tailoring predictions to the given context
+4. **Context** is the text input that the LLM processes (limited by context window)
+5. **Prompt engineering** is critical for getting useful outputs from LLMs
+6. LLMs differ based on their **architecture, parameters, and training data**
 
 ---
 
-1. LLMs are deep learning models that take text as input and predict what text should come next.
-2. LLMs are trained to recognize patterns in text using large amounts of text data.
-3. The attention mechanism is responsible for tailoring predictions to the given context.
-4. LLMs differ based on their architecture, parameters, and training data.
+Theory ↔ Practice Connections
+===
+
+**Theory:** Tokens are the basic unit of text in LLMs
+
+**Practice:** Understanding tokenization helps optimize context usage
 
 ---
 
-5. The **context** is the text that the applies the attention mechanism to.
-6. The **prompt** is the user input to the LLM and is critical to its behavior.
+**Theory:** Embeddings capture semantic meaning in vector space
+
+**Practice:** Similar concepts have similar embeddings (foundation for Session 3: RAG)
+
+---
+
+**Theory:** Attention mechanism processes all context tokens
+
+**Practice:** Everything in context influences output - prompt carefully
+
+---
+
+**Theory:** Context windows have hard token limits (*N*)
+
+**Practice:** Must prioritize information strategically (Session 2 covers this)
+
+---
+
+Looking Ahead: Session 1
+===
+
+**Next topic:** Coding with LLMs
+
+**The practical application:**
+
+Now that we understand how LLMs work, we'll learn how to:
+- Interface with LLMs programmatically via APIs
+- Use Python libraries (litellm) to make LLM calls
+- Integrate LLM capabilities into our bioinformatics workflows
+- Set up development environments for LLM-powered applications
 
 ---
 

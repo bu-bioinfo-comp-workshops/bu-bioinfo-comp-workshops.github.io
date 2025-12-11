@@ -1,10 +1,36 @@
 ---
-title: Coding with LLMs
+title: "Coding with LLMs"
+sub_title: "Programming with Large Language Models via APIs"
+author: "BU Bioinformatics Graduate Program"
 options:
     end_slide_shorthand: true
 ---
 
-Coding with LLMs
+Session 1: Coding with LLMs
+===
+
+**Learning Objectives:**
+- Understand how to interface with LLMs programmatically via APIs
+- Learn about API keys and authentication
+- Use Python libraries (litellm) to make LLM calls
+- Integrate LLM capabilities into bioinformatics workflows
+- Set up development environments for LLM-powered applications
+
+---
+
+Recap: From Theory to Practice
+===
+
+From Session 0, we learned:
+- LLMs are deep learning models that predict next tokens
+- Context windows have size limits
+- Prompts control LLM behavior
+
+**Today:** How to use this knowledge in code
+
+---
+
+Why Program with LLMs?
 ===
 
 - LLMs are only matrices
@@ -297,3 +323,60 @@ Workshop setup
 - Run python litellm demo
     - `python litellm_demo.py`
 
+---
+
+Key Takeaways
+===
+
+1. **APIs** enable programmatic access to LLMs via HTTP endpoints
+2. **API keys** provide authentication and must be kept secure
+3. **litellm** library simplifies working with multiple LLM providers
+4. **JSON format** is standard for API requests and responses
+5. **Environment variables** (.env files) safely store credentials
+6. LLM responses include **usage metadata** (tokens, costs)
+
+---
+
+Theory ↔ Practice Connections
+===
+
+**Theory:** LLMs process tokens and generate responses
+
+**Practice:** API calls send/receive these tokens as JSON
+
+---
+
+**Theory:** Context windows limit input size
+
+**Practice:** Must monitor token usage in API responses
+
+---
+
+**Theory:** Different models have different capabilities
+
+**Practice:** litellm provides unified interface across providers
+
+---
+
+Looking Ahead: Session 2
+===
+
+**Next topic:** Advanced Context Engineering & Prompt Patterns
+
+**Building on today:**
+
+Now that we can call LLMs from code, we'll learn:
+- Advanced prompt engineering techniques
+- Few-shot learning for biological problems
+- Structured output generation (JSON/XML)
+- Optimizing context usage within token limits
+- Chain-of-thought reasoning
+
+**Demo code:** `lectures/demos/session_1/`
+
+---
+
+Questions?
+===
+
+Next session: **Advanced Context Engineering & Prompt Patterns**
